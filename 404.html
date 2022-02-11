@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="stylesheet" href="https://module-function.herc.se/scss/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+         :root {
+            --priamry-color: #161616;
+            --on-priamry-color: #E7E5E3;
+            --priamry-container-color: #161616;
+            --on-priamry-container-color: #E7E5E3;
+            --header-1: 160px;
+            --header-4: 40px;
+            --p: 20px;
+        }
+        
+        body {
+            padding: 30px;
+            font-family: 'Archivo', sans-serif;
+        }
+        
+        body * {
+            font-weight: 500;
+            word-break: break-all;
+            line-height: 90%;
+        }
+        
+        .logotype {
+            font-size: 200px;
+        }
+        
+        .img {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body data-scroll-container>
+    <h1>Now, It's 404 Not Found.<br>Sorry about that.</h1>
+</body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css">
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+<script>
+    if (document.querySelector('[data-scroll-container]') && navigator.platform == 'Win32') {
+        var scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    }
+    setTimeout(() => {
+        scroll.update();
+        document.querySelector("body").addEventListener('mousemove', () => {
+            scroll.update();
+        })
+    }, 0)
+</script>
+
+</html>
