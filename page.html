@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - /-/.SE</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://module-function.herc.se/scss/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p class="fixed" style="top: 0;left: 0;z-index: 10; padding: calc(10px + 1vw);mix-blend-mode: difference;">
+        <a href="https://herc.se/" class="text-color-on-base text-decoration-none">/-/.SE</a>
+    </p>
+    <div data-scroll-container>
+
+        <div class="img-aera text-center mt-3">
+            <img class="img w-100" src="https://i.imgur.com/V33llrH.jpg" style="height: 70vmin;" alt="">
+        </div>
+        <div class="title py-1">
+            <h4 class="text-uppercase mb-1">event</h4>
+            <h1>Koakinaimarche</h1>
+        </div>
+
+        <div class="post-aera m:px-3 ccg m:ccg-3 ccg-1">
+            <div class="content h4 ccg:2-4">
+                <img class="img w-100" src="https://i.imgur.com/V33llrH.jpg" alt="">
+                <div class="">
+                    Arcu lacus pellentesque sed sem at hac aenean scelerisque. Duis ultrices est, dui quisque odio nibh nec urna pellentesque. Ultrices vel ornare est aliquam morbi. Tellus, orci felis, faucibus consequat nulla. Fermentum sagittis, nunc, quam quam condimentum.
+                    Amet id placerat eget vulputate in. Cras mauris praesent nulla ac vulputate et pulvinar nunc. Sit amet ultrices quis.
+                </div>
+            </div>
+            <div class="pages-control  h4 ccg:2-4 mt-6">
+                <div class="line border-top-1 my-2"></div>
+                <div class="control-penal flex pt-8">
+                    <div class="prev w-100">PREV</div>
+                    <div class="next w-100 text-right">NEXT</div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="mt-8">
+            <div class="line border-top-1 my-2" data-scroll data-scroll-speed="1.5"></div>
+            <div class="desc ccg ccg-1 m:ccg-4 p-3" style="--grid-gap-x: 10vw;">
+                <div class="m:mb-0 mb-4" data-scroll data-scroll-speed="-.2">
+                    <div class="title fw-600 mb-2">
+                        The Other Sites
+                    </div>
+                    <div class="footer-links">
+                        <!-- <div class=""><a class="text-color-base text-decoration-none" href="">Swiss Max</a><br><br></div>
+                        <div class=""><a class="text-color-base text-decoration-none" href="">Swiss Max</a><br><br></div>
+                        <div class=""><a class="text-color-base text-decoration-none" href="">Swiss Max</a><br><br></div> -->
+                    </div>
+                </div>
+                <div class="m:mb-0 mb-4" data-scroll data-scroll-speed="-.2">
+                    <div class="title fw-600 mb-2">
+                        Address
+                    </div>
+                    <div class="">No. 1, Nantai Street, Yongkang District, Tainan City 71005</div>
+                </div>
+                <div class="m:mb-0 mb-4" data-scroll data-scroll-speed="-.2">
+                    <!-- none -->
+                </div>
+                <div class="mb-2" data-scroll data-scroll-speed="-.2">Hi @herc.se
+                    <br><br> hercsart @github.com
+                    <br><br> HERC_SE @Twitter.com
+                    <br><br> Herculins @Twitch.com
+                    <br><br> HERC.SE @Instagram.com</div>
+            </div>
+            <div class="bottom flex text-uppercase flex-ai-end">
+                <div class="w-50 m:w-100">© 2022</div>
+                <div class="w-100 text-center"><img class="w-100 m:w-50" src="./assets/FlatLittleHill.svg" alt=""></div>
+                <div class="w-100 text-right">studio in taiwan.</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js "></script>
+    <script>
+        // fetch('https://sheets.googleapis.com/v4/spreadsheets/1ht4ekGq2xZJHcmFbYmL2IqC1phBB6yqu82d8I9a9wYU/values/Repos!A1:F999?alt=json&key=AIzaSyBdDg9HUG3s3377BO72GvlEBFJYYQwjBvc')
+        //     .then(res => res.json())
+        //     .then(res => {
+        //         console.log(res.values)
+        //         output = res.values;
+        //     }).then(() => {
+        //         var writeInnerHTML = "";
+        //         output.forEach(e => {
+        //             writeInnerHTML = writeInnerHTML + `
+        //             <div class="block">
+        //             <img src="${e[0]}" alt="" class="img w-100 " style="height: 35vmin; object-fit: cover; object-position: center;">
+        //             <h4 class="my-1">${e[1]}</h4>
+        //             <p class="text-uppercase mb-1">${e[2]}</p>
+        //             <a href="${e[4]}" class="text-color-base text-uppercase">${e[3]} →</a>
+        //             </div>`
+        //         });
+        //         document.querySelector(".link-list").innerHTML = writeInnerHTML;
+        //         console.log(writeInnerHTML);
+        //     });
+
+        function googlesheet(url, rev, run) {
+            fetch(url)
+                .then(res => res.json())
+                .then(res => {
+                    // console.log(res.values)
+                    if (rev != "") {
+                        output = res.values.reverse();
+                    } else {
+                        output = res.values;
+                    }
+                }).then(() => {
+                    run(output);
+                });
+        }
+
+        googlesheet("https://sheets.googleapis.com/v4/spreadsheets/1ht4ekGq2xZJHcmFbYmL2IqC1phBB6yqu82d8I9a9wYU/values/Repos!A1:F999?alt=json&key=AIzaSyBdDg9HUG3s3377BO72GvlEBFJYYQwjBvc", "", (output) => {
+            var writeInnerHTML = "";
+            output.forEach(e => {
+                writeInnerHTML = writeInnerHTML + `
+                    <div class="block">
+                    <img src="${e[0]}" alt="" class="img w-100 " style="height: 43vmin; object-fit: cover; object-position: center;">
+                    <h4 class="my-1">${e[1]}</h4>
+                    <p class="text-uppercase mb-1">${e[2]}</p>
+                    <a href="${e[4]}" class="text-color-base text-uppercase">${e[3]} →</a>
+                    </div>`
+            });
+            document.querySelector(".link-list").innerHTML = writeInnerHTML;
+            console.log(writeInnerHTML);
+        });
+
+        googlesheet("https://sheets.googleapis.com/v4/spreadsheets/1ht4ekGq2xZJHcmFbYmL2IqC1phBB6yqu82d8I9a9wYU/values/Links!A1:B999?alt=json&key=AIzaSyBdDg9HUG3s3377BO72GvlEBFJYYQwjBvc", "", (output) => {
+            var writeInnerHTML_header = "";
+            var writeInnerHTML_footer = "";
+            output.forEach(e => {
+                writeInnerHTML_header = writeInnerHTML_header + `
+                <a href="${e[1]}" class="text-color-base text-decoration-none">${e[0]}</a>
+                `;
+                writeInnerHTML_footer = writeInnerHTML_footer + `
+                <div class=""><a class="text-color-base text-decoration-none" href="${e[1]}">${e[0]}</a><br><br></div>
+                `
+            });
+            document.querySelector(".header-links").innerHTML = writeInnerHTML_header;
+            document.querySelector(".footer-links").innerHTML = writeInnerHTML_footer;
+
+            console.log(writeInnerHTML);
+        });
+
+        if (document.querySelector('[data-scroll-container]') && navigator.platform == 'Win32') {
+            var scroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true
+            });
+
+            setTimeout(() => {
+                scroll.update();
+                document.querySelector("a ").addEventListener('mousemove', () => {
+                    scroll.update();
+                })
+            }, 2000)
+        }
+    </script>
+</body>
+
+
+</html>

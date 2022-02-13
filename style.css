@@ -38,3 +38,7 @@ img {
 [data-scroll-container] {
     padding: calc(10px + 1vw);
 }
+
+.content img {
+    margin: 30px 0;
+}
