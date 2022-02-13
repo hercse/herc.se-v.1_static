@@ -88,3 +88,21 @@ img {
     margin: auto;
     width: 30vmax;
 }
+
+.menu-background {
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.menu-bg {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+}
