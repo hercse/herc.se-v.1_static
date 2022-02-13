@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+:root {
+    --priamry-color: #161616;
+    --on-priamry-color: #E7E5E3;
+    --priamry-container-color: #161616;
+    --on-priamry-container-color: #E7E5E3;
+    --header-1: calc(20px + 7.2vw);
+    --header-4: calc(15px + 1.3vw);
+    --p: calc(10px + 0.5vw);
+    --border-size: 2px;
+    --border-color: var(--base-color);
+    --border-radius: 0;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+}
+
+body * {
+    font-weight: 500;
+    word-break: break-all;
+    line-height: 90%;
+}
+
+.logotype {
+    font-size: calc(20px + 8.2vw);
+}
+
+.img {
+    border-radius: 20px;
+    object-position: center;
+    object-fit: cover;
+}
+
+img {
+    pointer-events: none;
+}
+
+[data-scroll-container] {
+    padding: calc(10px + 1vw);
+}
