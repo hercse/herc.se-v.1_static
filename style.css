@@ -42,3 +42,22 @@ img {
 .content img {
     margin: 30px 0;
 }
+
+.LovelyFace {
+    width: 25vmin;
+    position: absolute;
+    top: 40vh;
+    right: -12vmin;
+}
+
+.BigArrow {
+    position: absolute;
+    width: 22vw;
+    top: 1vmin;
+    left: 2vmin;
+}
+
+.SmallStar {
+    width: 2.5vw;
+    position: absolute;
+}
