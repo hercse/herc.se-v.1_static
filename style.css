@@ -51,6 +51,13 @@ img {
     right: -12vmin;
 }
 
+.LovelyFace_works {
+    width: 25vmin;
+    position: absolute;
+    top: 17vmax;
+    right: 12vmin;
+}
+
 .BigArrow {
     position: absolute;
     width: 22vw;
@@ -60,6 +67,11 @@ img {
 
 .SmallStar {
     width: 2.5vw;
+    position: absolute;
+}
+
+.Waa {
+    width: 5.5vw;
     position: absolute;
 }
 
@@ -105,4 +117,11 @@ img {
     top: 0;
     left: 0;
     height: 100% !important;
+}
+
+.menu-close-btn {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
