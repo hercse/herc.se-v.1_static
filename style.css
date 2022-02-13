@@ -46,18 +46,35 @@ img {
 .LovelyFace {
     width: 25vmin;
     position: absolute;
-    top: 40vh;
+    top: 30vmax;
     right: -12vmin;
 }
 
 .BigArrow {
     position: absolute;
     width: 22vw;
-    top: 1vmin;
+    top: 5vmin;
     left: 2vmin;
 }
 
 .SmallStar {
     width: 2.5vw;
     position: absolute;
+}
+
+.BtnCell {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: -3vmax;
+    width: 30vmin;
+}
+
+.Yaaaa {
+    position: absolute;
+    right: 17vmax;
+    top: 6vmax;
+    width: 22vmax;
 }
