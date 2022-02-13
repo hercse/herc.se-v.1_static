@@ -14,6 +14,7 @@
 
 body {
     font-family: 'Archivo', sans-serif;
+    overflow-x: hidden;
 }
 
 body * {
@@ -77,4 +78,13 @@ img {
     right: 17vmax;
     top: 6vmax;
     width: 22vmax;
+}
+
+.PhoneCall {
+    position: absolute;
+    bottom: -15vmax;
+    right: -100vw;
+    left: -91vw;
+    margin: auto;
+    width: 30vmax;
 }
