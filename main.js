@@ -43,9 +43,10 @@ if (document.querySelector('[data-scroll-container]') && navigator.platform == '
     }, 2000)
 }
 
-// window.addEventListener('resize', () => {
-//     location.reload();
-// });
+window.addEventListener('resize', () => {
+    // location.reload();
+
+});
 
 document.querySelector("menu").outerHTML = `
 <div class="menu fixed flex w-100" style="top: 0;left: 0;z-index: 10000; padding: calc(10px + 1vw);mix-blend-mode: difference;">
