@@ -23,7 +23,8 @@ googlesheet("https://sheets.googleapis.com/v4/spreadsheets/1ht4ekGq2xZJHcmFbYmL2
     document.querySelector(".footer-links").innerHTML = writeInnerHTML_footer;
 });
 
-if (document.querySelector('[data-scroll-container]') && navigator.platform == 'Win32') {
+// if (document.querySelector('[data-scroll-container]') && navigator.platform == 'Win32') {
+if (document.querySelector('[data-scroll-container]')) {
     var scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
